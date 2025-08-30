@@ -13,4 +13,9 @@ npm i -g n; n stable; exec $SHELL -l; node -v; npm -v
 npm install -g @anthropic-ai/claude-code
 
 
+# Docker
+docker run -d -p 8080:80 --name nginx-server docker-ubuntu                                    
+docker-compose up -d
 
+docker-compose exec ubuntu bash
+docker-compose down

@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  ubuntu:
+    build: .
+    stdin_open: true
+    tty: true
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app:/app
+      - ./data:/data  # データ永続化用
